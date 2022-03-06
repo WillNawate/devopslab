@@ -123,7 +123,7 @@ jobs:
   #           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   Build:
-      needs: [UnitTest,SonarCloud ]
+      needs: [UnitTest]
       name: Build
       runs-on: ubuntu-latest
       steps: 
